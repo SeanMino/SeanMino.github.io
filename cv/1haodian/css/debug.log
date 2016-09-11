@@ -1,0 +1,3 @@
+[0325/150938:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.
+[0325/150938:ERROR:proxy_service_factory.cc(105)] Cannot use V8 Proxy resolver in single process mode.
+[0325/150943:WARNING:dns_config_service_win.cc(653)] Failed to read DnsConfig.

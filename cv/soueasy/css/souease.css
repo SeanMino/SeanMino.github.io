@@ -1,0 +1,146 @@
+body{
+	background:url(../img/bg1.jpg) no-repeat;
+	background-size:100%;
+}
+.navbar .logo{
+	font-size: 24px;
+	font-weight:bold;
+}
+.title{
+	font-family: "arial";
+}
+.work_item{
+	border:1px solid #ccc;
+	box-shadow: 0 2px 15px 3px rgba(120,112,115,0.3);
+	margin-top:1em;
+	border-radius:10px;
+	height:370px;
+	overflow: hidden;
+	transition:1s;
+	position: relative;
+}
+.work_main img{
+	width:100px;
+	height:120px;
+	display:inline-block;
+	border:2px solid #333;
+}
+
+.work_main{
+	margin-top:0.8em;
+	font-family: "微软雅黑";
+}
+.img_box{
+	height:145px;
+	padding-top:15px;
+}
+.media-body li{
+	margin-top:0.5em;
+	font-weight:bold;
+}
+.media-heading{
+	margin-top:0.5em;
+	margin-bottom:0;
+	font-weight:bold;
+	font-size:1em;
+	
+}
+.work_item:hover{
+	transform: scale(1.2,1.2);
+	background:#2E6DA4;
+	color:#fff;
+	z-index:1000;
+}
+.work_item:hover img{
+	border:2px solid orange;
+}
+.work_item:hover .media-heading a{
+	color:greenyellow;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.pagesFooter nav{
+	padding:0;
+}
+
+@media all and (max-width:640px) {
+	.work_main img{
+		width:100%;
+		height:auto;
+	}
+	.work_item{
+		height:auto;
+	}
+	.img_box{
+		height:auto;
+		padding:0;
+	}
+	.work_item:hover{
+		transform: scale(1,1);
+		background:rgba(30,35,38,0.6);
+		color:#fff;
+		z-index:1000;
+	}
+	
+	.work_item1:hover{
+		transform: scale(1,1);
+		background:rgba(30,35,38,0.6);
+		color:#fff;
+		z-index:1000;
+	}
+}
+
+.work_item1{
+	border:1px solid #ccc;
+	box-shadow: 0 2px 15px 3px rgba(120,112,115,0.3);
+	margin-top:1em;
+	border-radius:10px;
+	padding-top:1em;
+	padding-bottom:1em;
+}
+.text_box p{
+	margin-bottom:5px;
+}
+.text_box span{
+	font-weight:bold;
+}
+.work_item1 img{
+	width:150px;
+	height:160px;
+	border:2px solid #333;
+	display:inline-block;
+}
+.work_item1 img:hover{
+	border:2px solid orange;
+}
+.work_item1{
+	transition:1s;
+}
+.work_item1:hover{
+	transform: scale(1.2,1.2);
+	background:#2E6DA4;
+	color:#fff;
+	z-index:1000;
+}
+.work_item1:hover .movie_name a,.work_item1:hover .grade{
+	color:greenyellow;
+}
+.work_main1{
+	margin-top:1em;
+	font-family: "微软雅黑";
+}
+.movie_name,.grade{
+	color:#06E;
+}
+.movie_name:hover{
+	color:orange;
+	cursor: pointer;
+}
+@media all and (max-width:640px) {
+	.work_item1:hover{
+		transform: scale(1,1);
+		background:rgba(30,35,38,0.6);
+		color:#fff;
+		z-index:1000;
+	}
+}

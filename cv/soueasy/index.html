@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+		<title>Ease Sou</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/souease.css"/>
+		<script src="js/jquery.min.js"></script>
+    	<script src="js/bootstrap.min.js"></script>
+    	<script src="template/template-native.js"></script>
+    	<script src="js/souease.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!--mobile display--> 
+		    <div class="navbar-header center-block">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand logo" href="#" text-primary>Sou Easy</a>
+		    </div>
+		
+		    <!--web display-->
+		    <div class="collapse navbar-collapse col-center-block" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="javascript:;">Books</a></li>
+		        <li><a href="javascript:;">Movies</a></li>
+		      </ul>
+		      <form class="navbar-form navbar-left" role="search" id="searchForm">
+		        <div class="form-group">
+		          <input type="text" class="form-control" placeholder="Search" id="searchText">
+		        </div>
+		        <button type="submit" class="btn btn-default">Submit</button>
+		      </form>
+		    </div>
+		  </div>
+		</nav>
+		<div id="work">
+			<div class="container title" id="resultHead"></div>
+			<div class="container list"></div>
+			<div class="container list1"></div>
+		</div>
+		<div class="container pagesFooter"></div>
+		
+		
+	<!--template-native 源生语法模板-->
+	<!--头信息-->
+	<script type="text/html" id="templateResultHead">
+	    搜索关键 “<strong class="text-primary"><%=keyword%></strong>”，搜索结果：一共 <%=total%> 条数据，<%=prepage%>条/页，共<%=pages%>页，当前第 <%=page%> 页
+	</script>
+	
+	<!--列表-->
+	<script type="text/html" id="templateResultList">
+		<div class="row">
+		    <%for (var i=0; i<books.length; i++) {%>
+				<div class="col-md-3 col-ms-3 work_item">
+					<div class="work_main">
+						<div class="img_box col-md-6 col-md-offset-3 text-center">
+							<a href="<%=books[i].alt%>" target="_blank">
+								<img src="<%=books[i].images.large%>" class="img-responsive"/>
+							</a>
+						</div>
+						<div class="media-body">
+				            <h4 class="media-heading text-center"><a href="<%=books[i].alt%>" target="_blank">《<%=books[i].title.substring(0,15)%>》</a></h4>
+				            <ul class="list-inline">
+				                <li>
+				                    <span class="glyphicon glyphicon-user"></span>
+			                   		 作者：<%for (var j=0; j<books[i].author.length; j++) {%>
+					                    	<%=books[i].author[j]%>&nbsp;&nbsp;
+					                     <%}%>
+				                </li>
+				                <br>
+				                <li>
+				                    <span class="glyphicon glyphicon-barcode"></span>
+				                  		  编号：<%=books[i].id%>
+				                </li>
+				                <br>
+				                <li>
+				                    <span class="glyphicon glyphicon-usd"></span>
+				                  		 价格：<%=books[i].price%>
+				                </li>
+				            </ul>
+				            <p style="text-indent: 2em;"><%=books[i].summary.substring(0,70)%>...</p>
+				        </div>
+					</div>
+				</div>
+			<%}%>
+		</div>
+	</script>
+	
+	<script type="text/html" id="templateResultList1">
+	    <%for (var i=0; i<subjects.length; i++) {%>
+			<div class="col-md-6 col-ms-6 work_item1">
+				<div class="img_box1 col-md-4 text-center">
+					<a href="<%=subjects[i].alt%>" target="_blank">
+						<img src="<%=subjects[i].images.large%>" class="img-responsive"/>
+					</a>
+				</div>
+				<div class="text_box col-md-8">
+					<h4 class="movie_name">
+						<a href="<%=subjects[i].alt%>" target="_blank">
+							《<%=subjects[i].original_title%>》
+						</a>
+					</h4>
+					<p class="director">
+						<span>
+							导演：<%for (var j=0; j<subjects[i].directors.length; j++) {%>
+			                    	<%=subjects[i].directors[j].name%>&nbsp;&nbsp;
+			                    <%}%>
+						</span>
+					</p>
+					<p class="actor">
+						主演：
+						<%for (var j=0; j<subjects[i].casts.length; j++) {%>
+	                    	<%=subjects[i].casts[j].name%>&nbsp;&nbsp;
+	                     <%}%>
+					</p>
+					<p class="years">
+						年份：<%=subjects[i].year%>
+					</p>
+					<span class="count">
+						<%=subjects[i].collect_count%>人评价
+					</span>&nbsp;&nbsp;&nbsp;
+					<span class="grade">
+						<%=subjects[i].rating.average%>分
+					</span>
+				</div>
+			</div>
+		<%}%>
+	</script>
+	
+<!--分页-->
+
+	<script type="text/html" id="templagePages">
+	    <nav class="col-md-4 col-md-offset-4">
+	        <ul class="pagination">
+	            <li class="prevPage"><a href="javascript:;">&laquo;</a></li>
+	            <%for (var i=pageLimit.start; i<=pageLimit.end; i++) {%>
+	            <%if (i == page) {%>
+	            <li class="active"><a href="javascript:;"><%=i%></a></li>
+	            <%}else{%>
+	            <li class="pageList" _page="<%=i%>"><a href="javascript:;"><%=i%></a></li>
+	            <%}%>
+	            <%}%>
+	            <li class="nextPage"><a href="javascript:;">&raquo;</a></li>
+	        </ul>
+	    </nav>
+	</script>
+	
+
+	
+	</body>
+	
+</html>

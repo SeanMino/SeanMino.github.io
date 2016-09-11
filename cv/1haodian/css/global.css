@@ -1,0 +1,528 @@
+/*global.css*/
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clearfix:after{ 
+	content:''; 
+	display:block; 
+	clear:both;
+}
+.clearfix{
+	*zoom:1;
+}
+.ico_bg{
+	background:url(../img/ico_bg.png);
+	background-repeat:no-repeat;
+}
+a{
+	font-family:"微软雅黑", Arial, "Helvetica Neue", HelveticaNeue, Helvetica, sans-serif;
+}
+/*头部区域*/
+.top{
+	min-width: 1200px;
+	height:35px;
+	background-color:#fafafa;
+	border-bottom:1px solid #dbdbdb;
+}
+.top .top_nav{
+	width:1200px;
+	height:35px;
+	margin:0 auto;
+}
+.top_nav .top_bar{
+	position:relative;
+	font-family: "微软雅黑";
+}
+.top_bar .login{
+	height:41px;
+	line-height:35px;
+	padding:0 7px 0 8px;
+	width:90px;
+	position:absolute;
+	top:0;
+	left:0;
+	background-position: 0 0;
+}
+.login a{
+	color:#0066cc;
+}
+.top_bar form{
+	padding-right:38px;
+	margin-top:8px;
+	position: relative;
+}
+.top_bar .label{
+	line-height:35px;
+	padding:0 5px 0 110px;
+}
+form .select{
+	border:1px solid #dbdbdb;
+	font-weight:bold;
+}
+form .car{
+	width:38px;
+	height:20px;
+	position: absolute;
+	top:0px;
+	right:0;
+	background-position:0 -40px;
+}
+.top_menu li{
+	height:34px;
+	line-height:34px;
+	padding-top:2px;
+	position:relative;
+	padding-right:24px;
+	padding-left:7px;
+}
+.top_menu .mine{
+	padding-left:0;
+}
+.top_menu a{
+	color:#666;
+}
+.top_menu .concern{
+	padding-right:42px;
+}
+.top_menu .collect{
+	padding-left:19px;
+}
+.top_menu .hand{
+	padding-left:23px;
+}
+.top_menu .triangle{
+	width:11px;
+	height:11px;
+	position: absolute;
+	top:14px;
+	left:61px;
+	background-position:0 -108px;
+	overflow:hidden;
+}
+.top_menu .line{
+	width:1px;
+	height:13px;
+	position: absolute;
+	top:14px;
+	right:0;
+	background-position:0 -119px;
+	overflow:hidden;
+}
+.hand .triangle{
+	top:14px;
+	left:85px;
+}
+.hand .phone{
+	width:10px;
+	height:16px;
+	position: absolute;
+	top:12px;
+	left:8px;
+	background-position:0 -60px;
+}
+.concern .blog{
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:10px;
+	left:68px;
+	background-position:0 -76px;
+}
+.concern .weixin{
+	width:16px;
+	height:16px;
+	position:absolute;
+	top:10px;
+	right:0px;
+	background-position:0 -92px;
+}
+
+/*导航区域*/
+.head{
+	min-width: 1200px;
+	height:133px;
+	background-color:#fff;
+	border-bottom:2px solid #fd3f49;
+}
+.head .head_nav{
+	width:1200px;
+	height:133px;
+	margin:0 auto;
+}
+.head .head_top{
+	width:1200px;
+	height:86px;
+}
+.head .logo{
+	width:179px;
+	height:70px;
+	margin-right:138px;
+	margin-top:16px;
+	position: relative;
+}
+.logo a{
+	width:179px;
+	height:70px;
+	position:absolute;
+	top:0;
+	right:0;
+	background-position:0 -130px;
+}
+.head .search{
+	width:528px;
+	height:55px;
+	margin-top:20px;
+	position:relative;
+}
+.search .product{
+	width:70px;
+	height:28px;
+	position:absolute;
+	top:2px;
+	left:2px;
+	background-position: 0 -200px;
+}
+.head_top .search1{
+	width:350px;
+	height:28px;
+	border:2px solid #ff3c3c;
+	border-right:none;
+	color:#666;
+	line-height:28px;
+	padding-left:76px;
+	outline:none;
+}
+.search_nav li{
+	float:left;
+	height:23px;
+	line-height:23px;
+}
+.search_nav a{
+	margin-right:8px;
+	color:#999;
+}
+.head_top .search_btn{
+	width:100px;
+	height:32px;
+	line-height:32px;
+	color:#fff;
+	background-color:#ff3c3c ;
+	outline:none;
+}
+
+.head .order{
+	width:206px;
+	height:49px;
+	margin-top:15px;
+	position:relative;
+}
+.order .welfare,.order .bill{
+	width:60px;
+	height:25px;
+	border:1px solid #f2f2f2;
+	line-height:25px;
+	padding-top:18px;
+	margin-top:3px;
+	text-align:center;
+}
+.order .bill{
+	border-right:none;
+}	
+.order a{
+	color:#999;
+}
+.order .shopping_car{
+	width:82px;
+	height:46px;
+	padding-top:3px;
+	line-height:46px;
+	color:#fff;
+	position:relative;
+}
+.shopping_car .shopping_text{
+	position:absolute;
+	z-index:10;
+	color:#fff;
+	padding-left:33px;
+}
+.welfare span{
+	width:22px;
+	height:15px;
+	position:absolute;
+	top:9px;
+	left:20px;
+	background-position:0 -228px;
+}
+.bill span{
+	width:22px;
+	height:14px;
+	position:absolute;
+	top:11px;
+	left:82px;
+	background-position:0 -243px;
+	overflow:hidden;
+}
+.shopping_car .ico_bg{
+	width:82px;
+	height:49px;
+	position: absolute;
+	top:-1px;
+	left:0px;
+	background-position:0 -257px;	
+}
+.head .head_bottom{
+	width:1200px;
+	height:47px;
+}
+.head_bottom .nav{
+	width:1200px;
+	height:47px;
+}
+.head_bottom .product_box{
+	width:210px;
+	height:36px;
+	margin-top:13px;
+	background-color: #ff3c3c;
+	margin-right:25px;
+	position: relative;
+}
+.product_box .product{
+	height:36px;
+	line-height:36px;
+	position: relative;
+}
+.product .product_text{
+	color:#fff;
+	font-weight:bold;
+	padding-left:41px;
+}
+.product .triangle{
+	width:9px;
+	height:6px;
+	position:absolute;
+	top:18px;
+	left:187px;
+	background-position:0 -306px;
+	overflow:hidden;
+}
+.product_box .deep_color{
+	width:210px;
+	height:3px;
+	background-color:#a01111;
+	position:absolute;
+	top:36px;
+	left:0;
+}
+.product_box .product_list{
+	width:210px;
+	height:395px;
+	position:absolute;
+	top:38px;
+	*top:40px;
+	left:0;
+}
+.product_box li{
+	line-height:33px;
+	height:33px;
+	background-color:#c23131;
+	text-indent:40px;
+	position:relative;
+}
+.product_list a{
+	color:#fff;
+	font-size:11px;
+}
+.product_list .ico_product{
+	width:17px;
+	height:20px;
+	position:absolute;
+	top:9px;
+	left:10px;
+}
+.food .ico_product{
+	background-position:0 -373px;
+}
+.drink .ico_product{
+	background-position:0 -394px;
+}
+.toy .ico_product{
+	background-position:0 -415px;
+}
+.fitting .ico_product{
+	background-position:0 -436px;
+}
+.beauty .ico_product{
+	background-position:0 -457px;
+}
+.women .ico_product{
+	background-position:0 -478px;
+}
+.bag .ico_product{
+	background-position:0 -499px;
+}
+.men .ico_product{
+	background-position:0 -520px;
+}
+.pc .ico_product{
+	background-position:0 -541px;
+}
+.car .ico_product{
+	background-position:0 -563px;
+}
+.medice .ico_product{
+	background-position:0 -584px;
+}
+.gift .ico_product{
+	background-position:0 -604px;
+}
+.product_list .ico_tria{
+	width:5px;
+	height:9px;
+	position:absolute;
+	top:12px;
+	right:15px;
+	background-position:0 -625px;
+	overflow:hidden;
+}
+
+.head_bottom .nav_item{
+	height:34px;
+	margin-top:13px;
+	line-height:34px;
+}
+.nav_item a{
+	font-weight:bold;
+	font-family:"微软雅黑";
+	color:#333;	
+	margin-right:40px;
+}
+.nav_item .color{
+	color:#ff3c3c;	
+}
+.nav_item a:hover{
+	color:#ff3c3c;
+}
+.head_bottom .img{
+	width:205px;
+	height:47px;
+	position: absolute;
+	top:0;
+	right:0;
+	background-color:slateblue;
+}
+
+
+/*底部区域*/
+.foot_box{
+	min-width: 1200px;
+	background-color:#fff;
+}
+.foot_box .foot{
+	width:1200px;
+	height:491px;
+	margin:0 auto;
+}
+.foot_box .foot_top{
+	width:1155px;
+	height:96px;
+	padding-top:30px;
+	padding-left:45px;
+	border-bottom:1px solid #ebebeb;
+}
+.foot_top .protect{
+	width:295px;
+	height:66px;
+}
+.foot_top .end{
+	width:268px;
+	height:66px;
+}
+.protect img{
+	width:66px;
+	height:66px;
+	margin-right:15px;
+}
+.protect .tips{
+	width:200px;
+	height:66px;	
+}
+.end_tips{
+	width:150px;
+}
+.tips .pro_tip,.end_tips .pro_tip{
+	display:block;
+}
+.protect .pro_tip{
+	padding-top:8px;
+	height:27px;
+	line-height:27px;
+	font-size:16px;
+	color:#333;
+	font-weight:bold;
+}
+.protect .tip{
+	height:22px;
+	line-height:22px;
+	color:#999;
+	font-family:"微软雅黑";
+}
+.foot_middle{
+	height: 200px;
+}
+.foot_middle dl{
+	height: 151px;
+	padding: 21px 0 28px 47px;
+	width: 122px;
+}
+.foot_middle dt{
+	height: 32px;
+	line-height: 32px;
+	font-weight: bold;
+	font-family:"微软雅黑";
+}
+.foot_middle dd{
+	height: 23px;
+	line-height: 23px;
+}
+.foot_middle dl a{
+	color: #666666;
+	font-family:"微软雅黑";
+}
+.code{
+	height: 179px;
+	width: 133px;
+	padding-top: 21px;
+	padding-left: 38px;
+}
+.code span{
+	height: 31px;
+	line-height: 31px;
+	color: #666;
+	font-weight: bold;
+}
+.foot_bottom{
+	height: 164px;
+}
+.foot_bottom p{
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+}
+.foot_bottom p a{
+	color: #666;
+	font-family:"微软雅黑";
+}
+.foot_pic1{
+	height: 30px;
+	margin-top: 19px;
+	padding-left: 158px;
+}
+.foot_pic1 a{
+	margin: 0 5px 0 4px;
+}
+.foot_bottom span{
+	color:#999;
+}

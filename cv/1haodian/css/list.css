@@ -1,0 +1,594 @@
+/*list.css*/
+body{
+	background-color:#1e243c;
+}
+a{
+	color:#7e7d7d;
+}
+.list_ico_bg{
+	background: url(../img/list_img/list_ico_bg.png);
+	background-repeat: no-repeat;
+}
+/*banner区域*/
+.banner{
+	min-width:1200px;
+}
+.banner a{
+	display:block;
+	width:100%;
+	height:582px;
+	background:url(../img/list_img/banner.png) no-repeat center;
+	box-sizing:border-box;
+}
+/*content区域*/
+/*section_top区域*/
+.section_top{
+	width:986px;
+	margin:0 auto;
+}
+.purchase{
+	width:986px;
+}
+.purchase a{
+	font-family: "宋体";
+}
+.purchase .pur_title{
+	width:986px;
+	height:96px;
+	background:#1e243c url(../img/list_img/pur_title.png) no-repeat center;
+}
+.purchase .pur_content{
+	width:984px;
+	border:1px solid #adadad;	
+	border-bottom:2px solid #adadad;
+	background-color:#fff;
+}
+.purchase li{
+	width:245px;
+	border-right:1px solid #adadad;	
+}
+.purchase .pur_item{
+	border-right:1px solid #fff;
+}
+.purchase .item_top{
+	height:46px;
+	background: url(../img/list_img/pur_time2.png) no-repeat center;
+}
+.purchase .item_middle{
+	width:245px;
+	height:210px;
+	text-align:center;
+}
+.purchase .item_bottom{
+	height:129px;
+	font-family: "微软雅黑";
+}
+.item_bottom .item_tip{
+	line-height:18px;
+	display:block;
+	height:36px;
+	color:#000;
+	padding-left:5px;
+	font-family: "微软雅黑";
+}
+.item_bottom .item_price{
+	height:45px;
+	line-height:45px;
+	font-weight:bold;
+	color:#f32434;
+	display:inline-block;
+	padding-left:10px;
+}
+.item_bottom .price_ico{
+	font-size:14px;
+	font-weight:bold;
+	color:#f32434;
+}
+.item_bottom .price_number{
+	font-size:22px;
+	font-weight:bold;
+	color:#f32434;
+}
+.item_bottom .price_concer{
+	margin-left:3px;
+	color:#666;
+}
+.item_bottom .item_btn{
+	width:245px;
+	text-align:center;
+}
+
+.milk{
+	width:986px;
+}
+.milk .milk_title{
+	width:986px;
+	height:195px;
+	background:#1e243c url(../img/list_img/austrial_title.png) no-repeat center;
+}
+.milk .milk_content{
+	width:986px;
+}
+.milk .fl{
+	width:240px;
+	margin-right:6px;
+	background-color:#fff;
+	margin-bottom:13px;
+}
+.milk .noMargin{
+	margin-right:0;
+}
+.milk_content .milk_top{
+	width:240px;
+	height:251px;
+}
+.milk_content .milk_middle{
+	width:219px;
+	height:32px;
+	line-height:16px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.milk_content .milk_bottom{
+	width:240px;
+	height:67px;
+	position: relative;
+}
+.milk_bottom .milk_price{
+	width:110px;
+	height:61px;
+	padding-left:10px;
+	font-family: "微软雅黑";
+	color:#7e7d7d;
+}
+.milk_price .price1{
+	display:inline-block;
+	height:19px;
+	line-height:19px;
+	padding-top:23px;
+	color:#f00;
+}
+.milk_price .price_ico{
+	color:#de1414;
+	font-weight:bold;
+	font-size:14px;
+}
+.milk_price .price_number{
+	color:#de1414;
+	font-weight:bold;
+	font-size:26px;
+}
+.milk_price .price2{
+	white-space: nowrap;
+}
+.milk_price .price_concer{
+	margin-left:-4px;
+}
+.milk_bottom .btn{
+	width:60px;
+	height:60px;
+	position:absolute;
+	top:6px;
+	right:10px;
+	background-position:0 -58px;
+}
+.milk .health_title{
+	width:986px;
+	height:102px;
+	background:#1e243c url(../img/list_img/health_title.png) no-repeat center center;
+}
+.milk .beauty_title{
+	width:986px;
+	height:102px;
+	background:#1e243c url(../img/list_img/beauty_title.png) no-repeat center center;
+}
+.asia{
+	width:986px;
+}
+.asia .asia_title{
+	width:986px;
+	height:172px;
+	background:#1e243c url(../img/list_img/asia_title.png) no-repeat center;
+}
+.asia .asia_content{
+	width:986px;
+}
+.asia .fl{
+	margin-right:6px;
+	background-color:#fff;
+	margin-bottom:6px;
+	border:1px solid #cecece;
+}
+.asia .noMargin{
+	margin-right:0;
+}
+.asia .asia_top{
+	width:320px;
+	height:209px;
+}
+.asia .asia_middle{
+	width:300px;
+	height:44px;
+	line-height:22px;
+	font-size:13px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:10px;
+}
+.asia_middle span{
+	color:#e72324;
+}
+.asia .asia_bottom{
+	width:310px;
+	height:38px;
+	font-family:"微软雅黑";
+	padding-right:10px;
+}
+.asia_bottom .price{
+	float:left;
+	height:38px;
+	padding-left:10px;
+}
+.asia_bottom .asia_price_ico{
+	display:inline-block;
+	line-height:28px;
+	height:28px;
+	padding-top:10px;
+	font-size:18px;
+	color:#e72324;
+	font-weight:bold;
+}
+.asia_bottom .asia_price{
+	display:inline-block;
+	width:62px;
+	line-height:38px;
+	height:38px;
+	font-size:30px;
+	color:#e72324;
+	font-weight:bold;
+	margin-right:25px;
+}
+.asia_bottom .discount{
+	float:left;
+	height:16px;
+	line-height:16px;
+	font-size:12px;
+	padding-top:22px;
+	position:relative;
+}
+.asia_bottom .discount_price{
+	color:#6a6a6a;
+}
+.asia_bottom .asia_discount{
+	width:49px;
+	height:17px;
+	position:absolute;
+	top:3px;
+	left:0px;
+	background-position:0 -209px;
+	overflow:hidden;
+}
+.asia_bottom .buy_number{
+	float:right;
+	height:38px;
+}
+.asia_bottom .number{
+	float:right;
+	height:30px;
+	line-height:30px;
+	padding-top:8px;
+	color:#e72324;
+	font-size:18px;
+}
+.asia_bottom .text_tips{
+	float:right;
+	height:28px;
+	line-height:28px;
+	padding-top:10px;
+	color:#6a6a6a;
+	font-size:12px;
+}
+.asia .japan_title{
+	width:986px;
+	height:91px;
+	background:#1e243c url(../img/list_img/japan_title.png) no-repeat center;
+}
+
+.europe{
+	width:940px;
+	margin:0 auto;
+}
+.europe .europe_title{
+	width:940px;
+	height:238px;
+	background:#1e243c url(../img/list_img/europ_title.png) no-repeat center;
+}
+.europe .europe_content{
+	width:940px;
+}
+.europe .fl{
+	margin-right:20px;
+	background-color:#fff;
+	margin-bottom:10px;
+}
+.europe .noMargin{
+	margin-right:0;
+}
+.europe .europe_top{
+	width:220px;
+	height:215px;
+}
+.europe .europe_middle{
+	width:210px;
+	height:109px;
+	font-size:11px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.europe_middle .tips{
+	line-height:20px;
+}
+.europe_middle .q_price{
+	line-height:20px;
+	color:#000;
+	display:block;
+	padding-top:9px;
+	font-weight:bold;
+}
+.europe_middle .price{
+	line-height:20px;
+	display:block;
+}
+.europe_middle .q_tips{
+	line-height:20px;
+	color:#c00;
+	text-decoration: underline;
+}
+.europe .europe_bottom{
+	height:38px;
+	width:220px;
+	padding-top:12px;
+	text-align: center;
+}
+.europe .wiring_title{
+	width:940px;
+	height:101px;
+	background:#1e243c url(../img/list_img/wiring_title.png) no-repeat center;
+}
+.europe .america_title{
+	width:940px;
+	height:239px;
+	background:#1e243c url(../img/list_img/america_title.png) no-repeat center;
+}
+.europe .luxury_title{
+	width:940px;
+	height:83px;
+	background:#1e243c url(../img/list_img/luxury_title.png) no-repeat center;
+}
+.europe .Hshopping_title{
+	width:940px;
+	height:93px;
+	background:#1e243c url(../img/list_img/Hshopping_title.png) no-repeat center;
+}
+
+.brand{
+	width:986px;
+}
+.brand .brand_title{
+	width:986px;
+	height:96px;
+	background:#1e243c url(../img/list_img/brand_title.png) no-repeat center;
+}
+.brand .brand_content{
+	width:986px;
+}
+.brand li{
+	width:320px;
+	height:360px;
+	margin-right:10px;
+}
+.brand .noMargin{
+	margin-right:0;
+}
+
+.Sshopping{
+	width:986px;
+}
+.Sshopping .Sshopping_title{
+	width:986px;
+	height:97px;
+	background:#1e243c url(../img/list_img/Sshopping_title.png) no-repeat center;
+}
+.Sshopping .Sshopping_content{
+	width:986px;
+}
+.Sshopping li{
+	width:238px;
+	height:310px;
+	margin-right:9px;
+	margin-bottom:20px;
+}
+.Sshopping .noMargin{
+	margin-right:0;
+}
+
+.country{
+	width:986px;
+}
+.country .country_title{
+	width:986px;
+	height:73px;
+	background:#1e243c url(../img/list_img/country_title.png) no-repeat center;
+}
+.country .country_content{
+	width:986px;
+}
+.country li{
+	width:470px;
+	height:360px;
+	margin-bottom:10px;
+}
+
+.shop{
+	width:976px;
+	margin:0 auto;
+}
+.shop .shop_title{
+	width:976px;
+	height:83px;
+	background:#1e243c url(../img/list_img/shop_title.png) no-repeat center;
+}
+.shop .shop_content{
+	width:976px;
+}
+.shop .shop_top{
+	width:238px;
+	height:236px;
+}
+.shop .shop_bottom{
+	width:224px;
+	height:64px;
+	padding-left:14px;
+	padding-top:10px;
+	background-color:#fff;
+	position: relative;
+}
+.shop .list_ico_bg{
+	width:54px;
+	height:54px;
+	position: absolute;
+	top:10px;
+	right:11px;
+	background-position:0 -132px;
+}
+.shop .shop_tips{
+	display:block;
+	line-height:27px;
+	color:#f93630;
+	font-size:19px;
+	font-weight:bold;
+	font-family: "微软雅黑";
+}
+.shop .shop_name{
+	line-height:20px;
+	color:#929292;
+	font-family: "微软雅黑";
+	padding-bottom:
+}
+.shop_content li{
+	margin-right:8px;
+	margin-bottom:10px;
+}
+.shop .noMargin{
+	margin-right:0;
+}
+
+.rules{
+	width:966px;
+	padding-top:10px;
+	padding-left:10px;
+	
+}
+.rules li{
+	width:966px;
+	height:34px;
+	line-height:34px;
+	color:#fff;
+}
+.rules .rules_link{
+	color:#fff;
+}
+
+/*section_bottom区域*/
+.section_bottom{
+	background-color: #fff;
+}
+.C_price{
+	width:984px;
+	height:23px;
+	border:1px solid #ffc8c8;
+	line-height:23px;
+	background-color:#fff;
+	position: relative;
+	margin:0 auto;
+}
+.C_price a{
+	color:#e17575;
+	margin-left:31px;
+}
+.C_price .C_price_tips{
+	color:#666;
+	margin-left:31px;
+}
+.C_price .list_ico_bg{
+	width:138px;
+	height:23px;
+	position:absolute;
+	top:0;
+	left:0;
+	background-position:0 -186px;
+}
+.nut_banner{
+	width:986px;
+	position: relative;
+	margin:0 auto;
+}
+.nut_banner img{
+	margin-top:10px;
+	width:986px;
+	height:60px;
+}
+.nut_banner .q_shopping{
+	width:82px;
+	height:19px;
+	position: absolute;
+	top:32px;
+	left:207px;
+}
+.nut_banner .get_in{
+	width:41px;
+	height:41px;
+	position: absolute;
+	top:10px;
+	left:308px;
+}
+
+.store_recommend{
+	width:986px;
+	margin:0 auto;
+}
+.store_recommend .recommend_tips{
+	width:986px;
+	height:39px;
+	line-height:39px;
+	font-size:16px;
+	color:#666;
+	font-weight:bold;
+	background:url(../img/list_img/recommend_line.png) no-repeat 105px 20px;
+}
+.store_recommend .recommend_content{
+	width:986px;
+	height:342px;
+}
+.store_recommend li{
+	width:234px;
+	height:340px;
+	border:1px solid #e0dfdf;
+	margin-right:13px;
+}
+.store_recommend .noMargin{
+	margin-right:0;
+}
+.recommend_content .recommend_top{
+	width:234px;
+	height:310px;
+}
+.recommend_content .recommend_bottom{
+	width:234px;
+	height:30px;
+	text-align:center;
+}
+.recommend_bottom .store_name{
+	line-height:30px;
+	color:#333;
+}
